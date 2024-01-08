@@ -121,6 +121,8 @@ public class MLKitBarcodeScanningProcessor {
     
     private void OnSuccess(List<Barcode> p_Barcodes) {
         for (Barcode barcode : p_Barcodes) {
+            if (barcode.getDisplayValue().length() != 17) continue;
+
             _BarcodeUpdateListener.onBarcodeDetected(barcode.getDisplayValue());
         }
     }
