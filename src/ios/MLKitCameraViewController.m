@@ -164,6 +164,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     if (self.globalBarcodes.count > 1) {
       if([self.globalBarcodes[0].rawValue isEqualToString: self.globalBarcodes[1].rawValue]) {
         for (MLKBarcode *barcode in barcodes) {
+          if (barcode.rawValue.length != 17) continue;
           
           NSLog(@"Barcode value: %@", barcode.rawValue);
           [self cleanupCaptureSession];
