@@ -1,11 +1,15 @@
-# MLKit Barcode Scanner
+# MLKit VIN Scanner
 
 [![Latest Stable Version](https://img.shields.io/npm/v/cordova-plugin-ia-mlkit-scanner.svg) ](https://npm-stat.com/charts.html?package=cordova-plugin-ia-mlkit-scanner)
 [![Total Downloads](https://img.shields.io/npm/dt/cordova-plugin-ia-mlkit-scanner.svg)](https://npm-stat.com/charts.html?package=cordova-plugin-ia-mlkit-scanner)
 
-Scan barcodes using [Google MLKit](https://developers.google.com/ml-kit/vision/barcode-scanning). 
+Scan VINs using [Google MLKit](https://developers.google.com/ml-kit/vision/barcode-scanning). 
 
 This plugin supports the `android` and `ios` platforms.
+
+Modified slightly from original: it only accepts a decoded barcode if it has the 17 characters of a Vehicle Identification Number.
+
+Also some android strings were added to get it to compile correctly.
 
 ## Installation
 
