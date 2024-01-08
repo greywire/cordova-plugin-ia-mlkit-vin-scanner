@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="title_activity_main">VIN Scanner</string>
+        <string name="auto_focus">Auto Focus</string>
+    <string name="barcode_header">Scan VIN</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="txtBarcode">Text Barcode</string>
+    <string name="ok">OK</string>
+    <string name="read_barcode">Read Barcode</string>
+</resources>
